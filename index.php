@@ -96,7 +96,7 @@ class lastfm {
 } //end class
 
 function styling(){
-	$lastFmObj = new lastfm('chart.getTopTracks','6ac5f948a3bf4a3ecbaa57b391820c78'); //the object
+	$lastFmObj = new lastfm('chart.getTopTracks',YOUR KEY); //the object
 	$info = $lastFmObj->getInfo();
 	$results = array();
 		
@@ -116,4 +116,4 @@ function styling(){
 foreach(styling() as $k)
 	print $k;
 //end script	
-?> 
+?>
